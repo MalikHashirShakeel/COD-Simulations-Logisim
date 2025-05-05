@@ -57,12 +57,13 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <sep/>
     <tool lib="0" name="Pin">
       <a name="tristate" val="false"/>
+      <a name="label" val="Clock"/>
     </tool>
     <tool lib="0" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
       <a name="width" val="32"/>
-      <a name="label" val="Read Data 2"/>
+      <a name="label" val="Read Data 1"/>
       <a name="labelloc" val="east"/>
     </tool>
     <tool lib="1" name="NOT Gate"/>
@@ -934,5 +935,66 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <a name="clabel" val=""/>
     <a name="clabelup" val="east"/>
     <a name="clabelfont" val="SansSerif plain 12"/>
+    <wire from="(540,340)" to="(560,340)"/>
+    <wire from="(550,220)" to="(570,220)"/>
+    <wire from="(370,340)" to="(400,340)"/>
+    <wire from="(540,270)" to="(540,340)"/>
+    <wire from="(420,360)" to="(420,400)"/>
+    <wire from="(430,200)" to="(440,200)"/>
+    <wire from="(410,400)" to="(420,400)"/>
+    <wire from="(430,200)" to="(430,220)"/>
+    <wire from="(470,240)" to="(550,240)"/>
+    <wire from="(270,370)" to="(370,370)"/>
+    <wire from="(440,170)" to="(440,200)"/>
+    <wire from="(270,240)" to="(400,240)"/>
+    <wire from="(270,270)" to="(400,270)"/>
+    <wire from="(270,310)" to="(400,310)"/>
+    <wire from="(370,340)" to="(370,370)"/>
+    <wire from="(550,220)" to="(550,240)"/>
+    <wire from="(470,270)" to="(540,270)"/>
+    <comp lib="0" loc="(440,170)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="Write_reg"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="0" loc="(410,400)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="Clock"/>
+    </comp>
+    <comp lib="0" loc="(270,240)" name="Pin">
+      <a name="width" val="5"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="Read_Reg_1"/>
+    </comp>
+    <comp lib="0" loc="(270,270)" name="Pin">
+      <a name="width" val="5"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="Read_Reg_2"/>
+    </comp>
+    <comp lib="0" loc="(560,340)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="32"/>
+      <a name="label" val="Read Data 2"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(270,310)" name="Pin">
+      <a name="width" val="5"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="Write_reg"/>
+    </comp>
+    <comp lib="0" loc="(570,220)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="32"/>
+      <a name="label" val="Read Data 1"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp loc="(440,270)" name="main"/>
+    <comp lib="0" loc="(270,370)" name="Pin">
+      <a name="width" val="32"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="Write_Data"/>
+    </comp>
   </circuit>
 </project>
